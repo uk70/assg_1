@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Name - Welcome</title>
+    <!-- Add your CSS link or include Bootstrap/Tailwind CSS -->
+    <style>
+      /* Reset default margin and padding */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Navigation bar styles */
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Landing section styles */
+      #landing {
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 100px 0;
+      }
+      #landing h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+      #landing p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+      }
+      .cta-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+      }
+      .cta-button:hover {
+        background-color: #0056b3;
+      }
+
+      /* About section styles */
+      #about {
+        background-color: #fff;
+        padding: 50px 0;
+        text-align: center;
+      }
+      #about h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      /* Services section styles */
+      #services {
+        background-color: #f4f4f4;
+        padding: 50px 0;
+        text-align: center;
+      }
+      .service {
+        margin-bottom: 40px;
+      }
+      .service img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .service h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      /* Doctors section styles */
+      #doctors {
+        background-color: #fff;
+        padding: 50px 0;
+        text-align: center;
+      }
+      .doctor {
+        margin-bottom: 40px;
+      }
+      .doctor img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .doctor h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      /* Contact section styles */
+      #contact {
+        background-color: #f4f4f4;
+        padding: 50px 0;
+        text-align: center;
+      }
+      #contact form {
+        margin-top: 20px;
+        text-align: center;
+      }
+      #contact form input,
+      #contact form textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      #contact form button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+      #contact form button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      /* Contact section styles */
+      #contact {
+        background-color: #f4f4f4;
+        padding: 50px 0;
+        text-align: center;
+      }
+      #contact form {
+        margin-top: 20%;
+        text-align: center;
+      }
+      /* Decrease the width of input types */
+      #contact form input[type="text"],
+      #contact form input[type="email"],
+      #contact form textarea {
+        display: block;
+        width: calc(100% - 40px); /* Adjust width as needed */
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Landing Page -->
+    <section id="landing">
+      <h1>Welcome to Hospital Name</h1>
+      <p>Discover top-quality healthcare services</p>
+      <a href="#booking" class="cta-button">Book an Appointment</a>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Information about the hospital, its history, mission, and values...</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service">
+        <img src="service1.jpg" alt="Service 1" />
+        <h3>Service 1</h3>
+        <p>Description of Service 1...</p>
+      </div>
+      <!-- Add more service divs as needed -->
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors">
+      <h2>Our Doctors</h2>
+      <div class="doctor">
+        <img src="doctor1.jpg" alt="Doctor 1" />
+        <h3>Dr. John Doe</h3>
+        <p>
+          Specialty: Cardiology<br />Experience: 10 years<br />Qualifications:
+          MD, Cardiologist
+        </p>
+      </div>
+      <!-- Add more doctor divs as needed -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Phone: +123456789<br />Email: info@hospitalname.com<br />Address: 123
+        Main St, City, Country
+      </p>
+      <!-- Optional contact form -->
+      <form action="submit.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
