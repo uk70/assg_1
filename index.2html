@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web20 C2</title>
+    <style>
+      /* Write all the necessery css here  */
+      #top > h1 {
+        text-align: center;
+      }
+
+      #top > div:nth-child(2) {
+        display: grid;
+        /* background-color: grey; */
+        grid-template-areas: "a1 a2 a3 a4 a5 a6";
+      }
+      #top div div {
+        height: 200px;
+        width: 200px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        background-size: cover;
+        background-position: center;
+        background-image: url("https://images-static.nykaa.com/uploads/3676c7e5-22df-469e-8d05-27a709371317.jpg?tr=w-400,cm-pad_resize");
+      }
+      #top > div div:nth-of-type(1) {
+        grid-area: a1;
+        background-color: red;
+      }
+      #top > div div:nth-of-type(2) {
+        grid-area: a2;
+        background-color: olive;
+      }
+      #top > div div:nth-of-type(3) {
+        grid-area: a3;
+        background-color: palegoldenrod;
+      }
+      #top > div div:nth-of-type(4) {
+        grid-area: a4;
+        background-color: indianred;
+      }
+      #top > div div:nth-of-type(5) {
+        grid-area: a5;
+        background-color: tan;
+      }
+      #top > div div:nth-of-type(6) {
+        grid-area: a6;
+        background-color: orange;
+      }
+      /* mid */
+      #mid > h1 {
+        text-align: center;
+      }
+
+      #mid > div:nth-child(2) {
+        display: grid;
+        /* background-color: grey; */
+        /* justify-content: space-between; */
+        /* display: flex; */
+        grid-template-areas: "a1 a2 a3 a4 a5 a6 a7 a8";
+      }
+      #mid div div {
+        /* border-radius: 45%; */
+        height: 200px;
+        width: 150px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        background-size: cover;
+        background-position: center;
+        background-image: url("https://images-static.nykaa.com/uploads/233484c0-fc72-4620-b71c-ccffb8c585e8.jpg?tr=w-400,cm-pad_resize");
+      }
+      #mid > div div:nth-of-type(1) {
+        grid-area: a1;
+        background-color: red;
+      }
+      #mid > div div:nth-of-type(2) {
+        grid-area: a2;
+        background-color: olive;
+      }
+      #mid > div div:nth-of-type(3) {
+        grid-area: a3;
+        background-color: palegoldenrod;
+      }
+      #mid > div div:nth-of-type(4) {
+        grid-area: a4;
+        background-color: indianred;
+      }
+      #mid > div div:nth-of-type(5) {
+        grid-area: a5;
+        background-color: tan;
+      }
+      #mid > div div:nth-of-type(6) {
+        grid-area: a6;
+        background-color: orange;
+      }
+      #mid > div div:nth-of-type(7) {
+        grid-area: a7;
+        background-color: tan;
+      }
+      #mid > div div:nth-of-type(8) {
+        grid-area: a8;
+        background-color: orange;
+      }
+
+      /* mid */
+
+      /* css */
+      /* Medium screens */
+      @media all and (min-width: 401px) and (max-width: 800px) {
+        #mid > div:nth-child(2) {
+          display: grid;
+          background-color: palevioletred;
+          grid-template-areas:
+            "a1 a2 a3  a4"
+            "a5 a6 a7 a8";
+        }
+      }
+      /* Small screens */
+      @media all and (min-width: 100px) and (max-width: 400px) {
+        #mid > div:nth-child(2) {
+          display: grid;
+          background-color: palevioletred;
+          grid-template-areas:
+            "a1 a2"
+            "a3  a4"
+            "a5 a6"
+            "a7 a8";
+        }
+      }
+      /* bottom */
+      #bottom > h1 {
+        text-align: center;
+      }
+
+      #bottom > div:nth-child(2) {
+        display: grid;
+        /* background-color: grey; */
+        grid-template-areas:
+          "a1 a2 a3"
+          " a4 a5 a6 ";
+      }
+      #bottom div div {
+        /* border-radius: 45%; */
+        height: 200px;
+        width: 200px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        background-size: cover;
+        background-position: center;
+        background-image: url("https://images-static.nykaa.com/uploads/db4960cc-467f-4e33-bc06-4b0b1c632592.jpg?tr=w-600,cm-pad_resize");
+      }
+      #bottom > div div:nth-of-type(1) {
+        grid-area: a1;
+        /* background-color: red; */
+      }
+      #bottom > div div:nth-of-type(2) {
+        grid-area: a2;
+        /* background-color: olive; */
+      }
+      #mid > div div:nth-of-type(3) {
+        grid-area: a3;
+        /* background-color: palegoldenrod; */
+      }
+      #bottom > div div:nth-of-type(4) {
+        grid-area: a4;
+        /* background-color: indianred; */
+      }
+      #bottom > div div:nth-of-type(5) {
+        grid-area: a5;
+        /* background-color: tan; */
+      }
+      #bottom > div div:nth-of-type(6) {
+        grid-area: a6;
+        /* background-color: orange; */
+      }
+      @media all and (min-width: 401px) and (max-width: 800px) {
+        #bottom > div:nth-child(2) {
+          display: grid;
+          background-color: palevioletred;
+          grid-template-areas:
+            "a1 a2"
+            "a3 a4"
+            "a5 a6 ";
+        }
+      }
+      /* Small screens */
+      @media all and (min-width: 100px) and (max-width: 400px) {
+        #bottom > div:nth-child(2) {
+          display: grid;
+          background-color: palevioletred;
+          grid-template-areas:
+            "a1"
+            "a2"
+            "a3"
+            "a4"
+            "a5"
+            "a6";
+        }
+      }
+      /*  */
+
+      /* bottom */
+    </style>
+  </head>
+  <body>
+    <div id="top">
+      <h1>Choose Your Store</h1>
+      <div>
+        <div class="card">
+          <!-- <h3>women</h3> -->
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </div>
+    <div id="mid">
+      <h1>Hard to Resist Deals</h1>
+      <div>
+        <!-- 8 cards will go inside here  -->
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+      </div>
+    </div>
+    <div id="bottom">
+      <h1>Super Saving Products</h1>
+      <div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </div>
+  </body>
+</html>
